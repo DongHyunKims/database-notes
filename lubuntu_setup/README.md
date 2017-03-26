@@ -1,4 +1,4 @@
-#### lubuntu/mysql 설치 과정
+#### lubuntu 설치 및 ssh 설치 과정
 
 1. virtual box 설치
 https://www.virtualbox.org
@@ -32,3 +32,5 @@ https://www.virtualbox.org
 
 > Tip. 10. 으로 시작하는 주소는 인터넷용 주소, 192. 로 시작하는 주소는 pc 밖에서 사용할때 사용<br>
 ><img src="../images/linux_connect.png" width="500">
+
+12. Machine의 take snapshot 기능을 통해 현재 설치된 상태의 os의 snapshot을 찍음
