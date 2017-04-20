@@ -273,20 +273,20 @@ tutorialspoint
 
 #### 1. The insert() Method Syntax
 
-~~~
+~~~powershell
 >db.COLLECTION_NAME.insert(document)
 ~~~
 #### 2. Example
 - `db.mycol.insert()` 명령을 통해 데이터를 삽입한다.
 - _id 값은 명시하지 않아도 자동으로 삽입된다.
-~~~
+~~~powershell
 _id: ObjectId(4 bytes timestamp, 3 bytes machine id, 2 bytes process id, 
    3 bytes incrementer)
 ~~~
 - `db.post.save(document)` 명령을 사용해도 같은 결과 제공한다.
 
 
-~~~
+~~~powershell
 >db.mycol.insert({
    _id: ObjectId(7df78ad8902c),
    title: 'MongoDB Overview', 
@@ -332,7 +332,7 @@ _id: ObjectId(4 bytes timestamp, 3 bytes machine id, 2 bytes process id,
 `find()` 메소드를 사용해서 mongodb collection에서 데이터를 찾아올수 있다.
 
 #### 1. The find() Method Syntax
-~~~
+~~~powershell
 >db.COLLECTION_NAME.find()
 ~~~
 
@@ -342,7 +342,7 @@ _id: ObjectId(4 bytes timestamp, 3 bytes machine id, 2 bytes process id,
 - `findOne()` 명령을 사용하면 하나의 데이터만 가져온다.
 
 
-~~~
+~~~powershell
 >db.mycol.find().pretty()
 {
    "_id": ObjectId(7df78ad8902c),
@@ -353,7 +353,6 @@ _id: ObjectId(4 bytes timestamp, 3 bytes machine id, 2 bytes process id,
    "tags": ["mongodb", "database", "NoSQL"],
    "likes": "100"
 }
-
 ~~~
 
 **RDBMS의 조건문과 비교**
@@ -502,7 +501,7 @@ _id: ObjectId(4 bytes timestamp, 3 bytes machine id, 2 bytes process id,
 >db.mycol.find()
 { "_id" : ObjectId(5983548781331adf45ec5), "title":"MongoDB Overview"}
 { "_id" : ObjectId(5983548781331adf45ec6), "title":"NoSQL Overview"}
-{ "_id" : ObjectId(5983548781331adf45ec7), "title":"Tutorials Point Overview
+{ "_id" : ObjectId(5983548781331adf45ec7), "title":"Tutorials Point Overview"}
 >db.mycol.remove({'title':'MongoDB Overview'})
 >db.mycol.find()
 { "_id" : ObjectId(5983548781331adf45ec6), "title":"NoSQL Overview"}
