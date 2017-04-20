@@ -1,7 +1,7 @@
 ## MongoDB
 
-
 ### MongoDB-Overview
+---
 
 #### 1. Database
 - database는 collections를 담는 물리적인 container이다. 각각의 database는 file system에 file들을 setting 한다.
@@ -55,6 +55,7 @@ key와 value로 이루어져 있으며 자바스크립트의 객체와 같은 �
 
 
 ### MongoDB-Advantages
+---
 
 mongoDB는 일반적인 RDBMS의 관계를 가지고 있지 않다. mongoDB는 relations(관계)에 대한 컨셉을 가지고 있지 않다. 
 
@@ -81,6 +82,7 @@ mongoDB는 일반적인 RDBMS의 관계를 가지고 있지 않다. mongoDB는 r
 - Data Hub
 
 ### MongoDB - Data Modelling
+---
 
 mongoDB의 데이터는 굉장히 유연한 구조이다. 필드 또는 구조의 같은 set을 필요로 하지 않는다.  
 
@@ -125,6 +127,7 @@ mongoDB의 데이터는 굉장히 유연한 구조이다. 필드 또는 구조�
 ~~~
 
 ### MongoDB - Create Database / Drop Database
+---
 
 `use` 명령어를 통해 생성한 데이터베이스를 사용할 수 있다.
 
@@ -184,6 +187,7 @@ test       0.23012GB
 
 
 ### MongoDB - Create Collection
+---
 
 #### 1. The createCollection() Method Syntax
 `db.createCollection(name, options)`을 사용하면 collection을 생성 할수 있다.
@@ -223,6 +227,8 @@ tutorialspoint
 ~~~
 
 ### MongoDB - Drop Collection
+---
+
 `db.collection.drop()`메소드를 사용하여 생성한 collection을 삭제 할 수 있다.
 
 #### 1. The drop() Method Syntax
@@ -268,6 +274,7 @@ tutorialspoint
 
 
 ### MongoDB - Insert Document
+---
 
 `insert()` 또는 `save()` method를 사용하여 collection에 document를 넣는다.
 
@@ -329,6 +336,7 @@ _id: ObjectId(4 bytes timestamp, 3 bytes machine id, 2 bytes process id,
 
 
 ### MongoDB - Query Document
+---
 `find()` 메소드를 사용해서 mongodb collection에서 데이터를 찾아올수 있다.
 
 #### 1. The find() Method Syntax
@@ -433,7 +441,9 @@ _id: ObjectId(4 bytes timestamp, 3 bytes machine id, 2 bytes process id,
 
 
 
-## MongoDB - Update Document
+### MongoDB - Update Document
+---
+
 - `update()`메소드를 사용하여 데이터를 수정 할수 있다.
 
 
@@ -481,6 +491,8 @@ _id: ObjectId(4 bytes timestamp, 3 bytes machine id, 2 bytes process id,
 
 
 ### MongoDB - Delete Document
+---
+
 `remove()`명령을 통해 데이터를 삭제한다.
 > - deletion criteria − (Optional) 해당 조건에 맞는 데이터를 삭제한다.
 > - justOne − (Optional) 두번째 parameter로 `ture` 또는 `1`을 넘겨 주면 오직 하나의 document를 삭제한다.
