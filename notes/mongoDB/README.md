@@ -18,7 +18,7 @@
 
 #### 3. Document
 - document는 key-value pairs로 구성 되어 있다.
-- document는 dynamic schema를 가지고 있다. 동일한 collection의 documents는 같은 set의 field와 구조를 가질 필요가 없으며 보통 field는 다른 타입을 가진  데이터를 가지고 있는다.
+- document는 dynamic schema를 가지고 있다. 
 
 
 #### 4. RDBMS vs. MongoDB
@@ -63,7 +63,7 @@ mongoDB는 일반적인 RDBMS의 관계를 가지고 있지 않다. mongoDB는 r
 - Schema가 존재 하지 않는다.
 - 하나의 객체형태로 구조화 되어 있다.
 - 복잡한 join을 필요로 하지 않는다.
-- 깊은 query기능을 제공한다.
+- Deep query기능을 제공한다.
 - 쉬운 scale-out
 - application object에서 database object로 변환이나 매핑을 할 필요가 없다.
 - 내부 메모리를 사용하여 working set의 저장과 data에 대한 접근이 빠르다.
@@ -88,8 +88,8 @@ mongoDB의 데이터는 굉장히 유연한 구조이다. 필드 또는 구조�
 
 #### 1. Some considerations while designing Schema in MongoDB
 - schemas는 당신의 요구사항에 따라 디자인 하면 된다.
-- 만약 당신이 여러개의 object를 사용 하고 싶다면 하나의 document에 object들을 결합하여 사용한다. 그렇지 않다면 분리 하면 된다.(하지만 join은 필요하지 않아야한다.)
-- 읽는 동안 join을 하는 것이 아니라 쓰는 동안 join 한다.
+- 만약 당신이 여러개의 object를 사용 하고 싶다면 하나의 document에 object들을 결합하여 사용한다. 그렇지 않다면 분리 하면 된다. (하지만 join은 필요하지 않아야한다.)
+- 읽는 동안 join을 하는 것이 아니라 쓰는 동안 join 한다. (DB 단계에서 join하는 것이 아닌 Appliction단계에서 join 해야한다. )
 - 당신이 가장 많이 사용하는 case에 당신의 schema를 최적화 하는 것이 좋다.
 - 복잡한 집계를 스키마에서 실행한다.
 
@@ -527,6 +527,6 @@ _id: ObjectId(4 bytes timestamp, 3 bytes machine id, 2 bytes process id,
 ~~~
 
 ### 참조
-- https://www.tutorialspoint.com/mongodb 해석
+- https://www.tutorialspoint.com/mongodb 번역
 
 
