@@ -7,7 +7,7 @@
 - database는 collections를 담는 물리적인 container이다. 각각의 database는 file system에 file들을 setting 한다.
 - 일반적으로 하나의 Mongo DB 서비에는 여러 database가 존재 한다.
 
-#### 2. Collections
+#### 2. Collection
 - mongoDB는 document를 collections에 저장 한다. 만약 collections 가 존재 하지 않는다면 , MongoDB는 collections를 만들고 첫번째 데이터를 입력 해야 한다.
 - maximum size 또는 documentation validation rules 과 같은 다양 한 룰을 적용 시켜  collections를 만들 수 있다. 
 - Collection은 Mongodb documents의 그룹이다. 
